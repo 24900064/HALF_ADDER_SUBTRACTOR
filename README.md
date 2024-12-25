@@ -56,6 +56,7 @@ Developed by: RegisterNumber:*/
 
 HALF ADDER
 
+
 exp-3c-half adder&half subtractor
 
 module HAHSexp3(a,b,cy,sm,df,bo);
@@ -74,7 +75,9 @@ and(bo,~a,b);
 
 endmodule
 
+
 HALF SUBRACTER
+
 
 module hs(a,b,difference,borrow);
 
@@ -100,7 +103,9 @@ endmodule
 
 **Output/TIMING Waveform**
 
-![Screenshot 2024-12-25 100156](https://github.com/user-attachments/assets/f89823fd-0c35-483e-b63f-d82da8b43b08)
+
+![Screenshot 2024-12-25 100257](https://github.com/user-attachments/assets/7dffcfd9-2a9a-4e1a-aa79-4694aed09839)
+
 
 
 **Result:**
