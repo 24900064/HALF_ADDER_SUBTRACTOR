@@ -1,4 +1,4 @@
-# HALF_ADDER_SUBTRACTOR
+![Screenshot 2024-12-25 095743](https://github.com/user-attachments/assets/1666c069-ad83-428b-b609-42222ec4cbcf)# HALF_ADDER_SUBTRACTOR
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
 
@@ -54,8 +54,54 @@ Figure -02 HALF Subtractor
 
 Developed by: RegisterNumber:*/
 
+HALF ADDER
+
+exp-3c-half adder&half subtractor
+
+module HAHSexp3(a,b,cy,sm,df,bo);
+
+input a,b;
+
+output cy,sm,df,bo;
+
+xor(sm,a,b);
+
+and(cy,a,b);
+
+xor(df,a,b);
+
+and(bo,~a,b);
+
+endmodule
+
+HALF SUBRACTER
+
+module hs(a,b,difference,borrow);
+
+input a,b;
+
+output difference,borrow;
+
+assign difference= (a ^ b);
+
+assign borrow= ( ~a & b);
+
+endmodule
+
+
+
 **RTL Schematic**
+
+![Screenshot 2024-12-25 095743](https://github.com/user-attachments/assets/77dd6615-b817-47a4-a5f7-a808f3ef4790)
+
+
+![Screenshot 2024-12-25 100156](https://github.com/user-attachments/assets/7b9577c2-7c68-4654-87c6-d3237ac50d9b)
+
 
 **Output/TIMING Waveform**
 
+![Screenshot 2024-12-25 100156](https://github.com/user-attachments/assets/f89823fd-0c35-483e-b63f-d82da8b43b08)
+
+
 **Result:**
+ Thus the half adder and half subracter is designed and its truth table in Quatrus using Verilog programming is verified
