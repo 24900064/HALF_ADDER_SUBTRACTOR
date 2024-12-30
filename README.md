@@ -53,10 +53,8 @@ Figure -02 HALF Subtractor
 
 Developed by: RegisterNumber:*/
 
-HALF ADDER
+HALF ADDER AND HALF SUBTRACTER:
 
-
-exp-3c-half adder&half subtractor
 
 module HAHSexp3(a,b,cy,sm,df,bo);
 
@@ -71,22 +69,6 @@ and(cy,a,b);
 xor(df,a,b);
 
 and(bo,~a,b);
-
-endmodule
-
-
-HALF SUBRACTER
-
-
-module hs(a,b,difference,borrow);
-
-input a,b;
-
-output difference,borrow;
-
-assign difference= (a ^ b);
-
-assign borrow= ( ~a & b);
 
 endmodule
 
